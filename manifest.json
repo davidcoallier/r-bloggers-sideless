@@ -1,0 +1,33 @@
+{
+  "name": "R-Bloggers Full Width Extension",
+  "manifest_version": 2,
+  "version": "1.0",
+  "description": "An extension to see R-Bloggers without sidebars.",
+  "browser_action": {
+    
+  },
+  "icons": {
+      "16": "icon-16.png",
+      "48": "icon-48.png",
+      "128": "icon-128.png"
+  },
+  "content_scripts": [{
+      "matches": [
+        "https://r-bloggers.com/*", 
+        "http://r-bloggers.com/*", 
+        "http://www.r-bloggers.com/*", 
+        "https://www.r-bloggers.com/*"
+      ],
+      "js": ["jquery.js"],
+      "run_at": "document_start"
+  },{
+      "matches": [
+        "https://r-bloggers.com/*", 
+        "http://r-bloggers.com/*", 
+        "http://www.r-bloggers.com/*", 
+        "https://www.r-bloggers.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_end"
+  }] 
+}
