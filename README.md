@@ -23,7 +23,9 @@ Clone this code, enable Developer mode, and click on "Load Unpacked Extension" i
 2-Clause BSD License (http://opensource.org/licenses/bsd-license.php) 
 
 Owner: David Coallier
+
 Organisation: Personal
+
 Year: 2012
 
 
